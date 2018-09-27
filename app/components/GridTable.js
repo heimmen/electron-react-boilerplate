@@ -11,13 +11,15 @@ export default class Home extends Component<Props> {
 
   render() {
     return (
-      <div className={styles.container} data-tid="container">
-        <h2>Home</h2>
-        <br />
-        <Link to={routes.TABLE}>Grid Table</Link>
-        <br />
-        <br />
-        <Link to={routes.COUNTER}>Counter</Link>
+      <div>
+        <div className={styles.backButton} data-tid="backButton">
+          <Link to={routes.HOME}>
+            <i className="fa fa-arrow-left fa-3x" />
+          </Link>
+        </div>
+        <div className={styles.container} data-tid="container">
+          <h2>GRID TABLE</h2>
+        </div>
       </div>
     );
   }
